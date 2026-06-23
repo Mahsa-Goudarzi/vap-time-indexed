@@ -634,7 +634,7 @@ with tab1:
             key=f"op_table_{n_c}_{n_v}",
         )
 
-        st.markdown('<p class="section-label">Cargo Weight  p (kg) · Compensation  δ (€)</p>',
+        st.markdown('<p class="section-label">Cargo Weight  p (tonnes) · Compensation  δ (€)</p>',
                     unsafe_allow_html=True)
         col_p, col_d = st.columns(2)
         with col_p:
@@ -648,7 +648,7 @@ with tab1:
                 key=f"delta_table_{n_t}",
             )
 
-        st.markdown('<p class="section-label">Vehicle Capacity  Cap (kg) · Emissions (g/km)</p>',
+        st.markdown('<p class="section-label">Vehicle Capacity  Cap (tonnes) · Emissions (g/km)</p>',
                     unsafe_allow_html=True)
         cap_df = st.data_editor(
             default_1row(vl, 40.0), use_container_width=True, hide_index=True,
