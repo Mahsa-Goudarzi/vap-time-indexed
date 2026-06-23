@@ -508,7 +508,7 @@ with tab1:
             f"<small style='color:#7dd3fc'>⚡ {ev_count} electric · "
             f"🛢 {n_v - ev_count} diesel</small>", unsafe_allow_html=True)
 
-        st.markdown('<p class="section-label">Cargo Weight  p (kg)</p>',
+        st.markdown('<p class="section-label">Cargo Weight  p (tonnes)</p>',
                     unsafe_allow_html=True)
         p_df = st.data_editor(
             df_1row(BASE["p"], t_labels),
@@ -544,7 +544,7 @@ with tab1:
             key=f"op_{n_c}_{n_v}",
         )
 
-        st.markdown('<p class="section-label">Vehicle Capacity  Cap (kg)</p>',
+        st.markdown('<p class="section-label">Vehicle Capacity  Cap (tonnes)</p>',
                     unsafe_allow_html=True)
         cap_df = st.data_editor(
             df_1row(BASE["Cap"], v_labels),
